@@ -1,0 +1,259 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cu_hlg_contract_desoft
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e-20161124\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-22 02:00+0000\n"
+"PO-Revision-Date: 2020-03-21 22:05-0400\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_service_sale_view_kanban
+msgid "<span>Reports</span>"
+msgstr "<span>Informes</span>"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_service_sale_view_kanban
+msgid "<span>To Approve</span>"
+msgstr "<span>Por aprobar</span>"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_service_sale_view_kanban
+msgid "<span>To Do</span>"
+msgstr "<span>Hacer</span>"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Closed"
+msgstr "Cerrado"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_color
+msgid "Color Index"
+msgstr "Índice de Colores"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Contract Type"
+msgstr "Tipo Contrato"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.actions.act_window,name:l10n_cu_hlg_contract_desoft.act_contract_from_contract_service_sale
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_contract_ids
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_service_sale_view_kanban
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Contracts"
+msgstr "Contratos"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_count_contract
+msgid "Contracts Count"
+msgstr "Cantidad de contratos"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Department"
+msgstr "Departamento"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "In Action"
+msgstr "En Progreso"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Monetary execution"
+msgstr "Ejecución monetaria"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Month"
+msgstr "Mes"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_service_sale_view_kanban
+msgid "More <i class=\"fa fa-caret-down\"/>"
+msgstr "Más <i class=\"fa fa-caret-down\"/>"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_sale_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_national_contract
+msgid "National Contract"
+msgstr "Contracto Nacional"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Not Close"
+msgstr "No Cerrados"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_nro_national_contract
+msgid "Nro National Contract"
+msgstr "Nro Contrato Nacional"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model,name:l10n_cu_hlg_contract_desoft.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Pending Appro."
+msgstr "Pendiente Aprobar"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Pending Dict."
+msgstr "Pendiente Dictamen"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Pending Signed"
+msgstr "Pendiente Firma"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_service_id
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Product or Service"
+msgstr "Producto o Servicio"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.actions.act_window,name:l10n_cu_hlg_contract_desoft.action_l10n_cu_contract_contract_service_sale
+#: model:ir.ui.menu,name:l10n_cu_hlg_contract_desoft.menu_contract_service_sale
+msgid "Productos o Servicios (Desoft)"
+msgstr "Productos o Servicios (Desoft)"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Review at the beginning of the year"
+msgstr "Revisión a inicio de año?"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_service_sale_view_kanban
+msgid "Settings"
+msgstr "Configuración"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_required_support_contract
+#: model:ir.model.fields,field_description:l10n_cu_hlg_contract_desoft.field_l10n_cu_contract_contract_type_required_support_contract
+msgid "Support Contract"
+msgstr "Contrato Soporte"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.ui.view,arch_db:l10n_cu_hlg_contract_desoft.contract_view_search_desoft
+msgid "Year"
+msgstr "Año"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model,name:l10n_cu_hlg_contract_desoft.model_l10n_cu_contract_contract
+msgid "l10n_cu_contract.contract"
+msgstr "l10n_cu_contract.contract"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model,name:l10n_cu_hlg_contract_desoft.model_l10n_cu_contract_contract_service_sale
+msgid "l10n_cu_contract.contract_service_sale"
+msgstr "l10n_cu_contract.contract_service_sale"
+
+#. module: l10n_cu_hlg_contract_desoft
+#: model:ir.model,name:l10n_cu_hlg_contract_desoft.model_l10n_cu_contract_contract_type
+msgid "l10n_cu_contract.contract_type"
+msgstr "l10n_cu_contract.contract_type"

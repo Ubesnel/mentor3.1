@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="invoice_supplier_form_inherit_inherit_inherit" model="ir.ui.view">
+            <field name="name">account.invoice.supplier.form.inherit.inherit.inherit</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="l10n_cu_hlg_contract.invoice_form_inherit_inherit"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="contract_id" position="replace">
+                        <field name="contract_id" required="False" attrs="{'readonly':[('external_create','=',True)]}"
+                               domain="[('partner_id','=',partner_id),('state','=','open')]"
+                               options="{'no_create': True}"/>
+                    </field>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

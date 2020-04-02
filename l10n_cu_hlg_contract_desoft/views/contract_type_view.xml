@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_l10n_cu_contract_contract_type_form_desoft" model="ir.ui.view">
+            <field name="name">l10n_cu_contract.contract_type.form.desoft</field>
+            <field name="model">l10n_cu_contract.contract_type</field>
+            <field name="inherit_id" ref="l10n_cu_hlg_contract.view_l10n_cu_contract_contract_type_form"/>
+            <field name="arch" type="xml">
+                <field name="required_milestone_payment" position="after">
+                    <field name="required_support_contract"/>
+                 </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>

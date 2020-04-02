@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_l10n_cu_contract_contract_form_desoft" model="ir.ui.view">
+            <field name="name">l10n_cu_contract.contract.form.desoft</field>
+            <field name="model">l10n_cu_contract.contract</field>
+            <field name="inherit_id" ref="l10n_cu_hlg_contract.view_l10n_cu_contract_contract_form"/>
+            <field name="arch" type="xml">
+                <field name="option_select" position="after">
+                    <field name="national_contract"/>
+                    <field name="nro_national_contract" attrs="{'invisible': [('national_contract','=',False)]}"/>
+                </field>
+                <field name="required_parent_id" position="after">
+                    <field name="required_support_contract" invisible="1"/>
+                </field>
+                <field name="parent_id" position="after">
+                    <field name="contract_id" attrs="{'invisible': [('required_support_contract', '!=', True)]}"
+                           domain="[('state', 'in', ['open']),('partner_id', '=', partner_id),('contract_type', '!=', contract_type)]"
+                           options="{'no_create': True}"/>
+                </field>
+                <field name="municipality_id" position="after">
+                    <field name="service_id" options="{'no_create': True,'no_open': True}" attrs="{'invisible': [('flow', '=', 'supplier')]}"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="contract_view_search_desoft" model="ir.ui.view">
+            <field name="name">contract.desoft.search</field>
+            <field name="model">l10n_cu_contract.contract</field>
+            <field name="arch" type="xml">
+                <search string="Contracts">
+                    <field name="name"/>
+                    <field name="number"/>
+                    <field name="complete_number"/>
+                    <field name="partner_id"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field name="date_send_signed"/>
+                    <field name="state"/>
+                    <field name="contract_type"/>
+                    <field name="service_id"/>
+
+                    <filter string="Draft" name="draft" domain="[('state','in', ['draft'])]"/>
+                    <filter string="Pending Dict." name="pending_dict" domain="[('state','in', ['pending_dict'])]"/>
+                    <filter string="Pending Appro." name="pending_appro" domain="[('state','in', ['pending_appro'])]"/>
+                    <filter string="Rejected" name="rejected" domain="[('state','in', ['rejected'])]"/>
+                    <filter string="Approved" name="approval" domain="[('state','in', ['approval'])]"/>
+                    <filter string="Pending Signed" name="pending_signed"
+                            domain="[('state','in', ['pending_signed'])]"/>
+                    <filter string="In Action" name="open" domain="[('state','in', ['open'])]"/>
+                    <filter string="Closed" name="close" domain="[('state','in', ['close'])]"/>
+                    <filter string="Cancelled" name="cancelled" domain="[('state','in', ['cancelled'])]"/>
+
+                    <filter string="Not Close" name="not_close" domain="[('state','not in', ['close','cancelled'])]"/>
+                    <filter string="Review at the beginning of the year" name="revision" domain="[('revision', '=', True)]"/>
+                    <filter string="Monetary execution" name="revision" domain="[('percentage_execution', '&gt;=', 75)]"/>
+
+                    <!--<filter string="Amount rest" name="amount_rest" domain="[('amount_rest','&lt;',1000)]"/>-->
+                    <!--<filter string="Maturity" name="maturity"-->
+                            <!--domain="[('date_end', '&lt;=', (datetime.date.today() + relativedelta(months=1)).strftime('%%Y-%%m-%%d'))]"/>-->
+                    <filter name="groupby_month" context="{'group_by': 'date_start:month'}" string="Month"/>
+                    <filter name="groupby_year" context="{'group_by': 'date_start:year'}" string="Year"/>
+                    <filter name="groupby_state" context="{'group_by': 'state'}" string="State"/>
+                    <group expand="0" string="Group By">
+                        <filter name="groupby_contract_type" context="{'group_by' : 'contract_type'}"
+                                string="Contract Type"/>
+                        <filter name="groupby_department_id" context="{'group_by' : 'department_id'}"
+                                string="Department"/>
+                        <filter name="groupby_customer_id" context="{'group_by' : 'partner_id'}"
+                                string="Customer"/>
+                        <filter name="groupby_service_id" context="{'group_by' : 'service_id'}"
+                                string="Product or Service"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+         <record id="act_contract_from_contract_service_sale" model="ir.actions.act_window">
+            <field name="name">Contracts</field>
+            <field name="res_model">l10n_cu_contract.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="contract_view_search_desoft"/>
+             <field name="domain">[('flow','=','customer')]</field>
+            <field name="context">{
+                "search_default_service_id": [active_id],
+                "default_service_id": active_id}
+            </field>
+        </record>
+
+    </data>
+</odoo>
