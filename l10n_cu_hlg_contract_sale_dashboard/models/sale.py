@@ -182,7 +182,7 @@ class ContractSaleDashboard(models.Model):
     							            c.percentage_execution as percentage_execution
                                             from l10n_cu_contract_contract c, res_partner p
                                             where c.partner_id = p.id
-                                            and c.flow = 'customer' and c.state = 'open' and c.parent_id != null
+                                            and c.flow = 'customer' and c.state = 'open'
                                             and c.percentage_execution>=%s
                                             order by c.percentage_execution DESC limit 10;
                                     """
@@ -206,10 +206,12 @@ class ContractSaleDashboard(models.Model):
             dicc_c['number'] = c['number']
             dicc_c['name'] = c['contract']
             dicc_c['partner'] = c['partner']
-            dicc_c['total'] = c['amount_total']
-            dicc_c['execute'] = c['amount_invoice']
-            dicc_c['residual'] = c['amount_rest']
-            dicc_c['percent'] = c['percentage_execution']
+            dicc_c['total'] = "{0:.2f}".format(c['amount_total']).replace('.', ',') if c['amount_total'] else '0,00'
+            dicc_c['execute'] = "{0:.2f}".format(c['amount_invoice']).replace('.', ',') if c[
+                'amount_invoice'] else '0,00'
+            dicc_c['residual'] = "{0:.2f}".format(c['amount_rest']).replace('.', ',') if c['amount_rest'] else '0,00'
+            dicc_c['percent'] = "{0:.2f}".format(c['percentage_execution']).replace('.', ',') if c[
+                'percentage_execution'] else '0,00'
             contract_table_1.append(dicc_c)
 
         view_invoice_id = self.env.ref('l10n_cu_hlg_contract_sale_dashboard.invoice_tree_dashboard_sale').id
