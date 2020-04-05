@@ -68,7 +68,7 @@
                                             </td>
 
                                             <td style="text-align:right;vertical-align:middle;">
-                                                <span t-field="o.amount_total"/>
+                                                <span t-field="'{0:.2f}'.format(o.amount_total).replace('.',',')"/>
                                             </td>
                                             <!--Fecha de inicio del contrato-->
                                             <td style="text-align:center;vertical-align:middle;">

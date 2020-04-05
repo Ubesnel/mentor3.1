@@ -68,16 +68,16 @@
                                         <t t-esc="o.date_end"/>
                                     </td>
                                     <td style="text-align:right;vertical-align:middle;">
-                                        <span t-field="o.amount_total"/>
+                                        <span t-field="'{0:.2f}'.format(o.amount_total).replace('.',',')"/>
                                     </td>
                                     <td style="text-align:right;vertical-align:middle;">
-                                        <span t-field="o.amount_invoice"/>
+                                        <span t-field="'{0:.2f}'.format(o.amount_invoice).replace('.',',')"/>
                                     </td>
                                     <td style="text-align:right;vertical-align:middle;">
-                                        <span t-field="o.percentage_execution"/>
+                                        <span t-field="'{0:.2f}'.format(o.amount_rest).replace('.',',')"/>
                                     </td>
                                     <td style="text-align:right;vertical-align:middle;">
-                                        <span t-field="o.percentage_execution"/>
+                                        <span t-field="'{0:.2f}'.format(o.percentage_execution).replace('.',',')"/>
                                     </td>
                                 </tr>
                             </t>

@@ -71,15 +71,15 @@
                                             </td>
                                             <!-- Importe CUP-->
                                              <td style="text-align:right;vertical-align:middle;">
-                                                <span t-field="o.total_cup"/>
+                                                <span t-field="'{0:.2f}'.format(o.total_cup).replace('.',',')"/>
                                             </td>
                                             <!-- Importe CUC-->
                                              <td style="text-align:right;vertical-align:middle;">
-                                                <span t-field="o.total_cuc"/>
+                                                <span t-field="'{0:.2f}'.format(o.total_cuc).replace('.',',')"/>
                                             </td>
                                             <!--Importe-->
                                             <td style="text-align:right;vertical-align:middle;">
-                                                <span t-field="o.amount_total"/>
+                                                <span t-field="'{0:.2f}'.format(o.amount_total).replace('.',',')"/>
                                             </td>
                                             <!--Fecha de inicio del contrato-->
                                             <td style="text-align:center;vertical-align:middle;">
