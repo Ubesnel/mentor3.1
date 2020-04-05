@@ -57,10 +57,10 @@ class ContractSingleXlsPercentReport(ReportXlsx):
             worksheet.write(x, 3, tools.ustr(c.name), normal_format)
             worksheet.write(x, 4, c.date_start, normal_format)
             worksheet.write(x, 5, c.date_end, normal_format)
-            worksheet.write(x, 6, c.amount_total, normal_format)
-            worksheet.write(x, 7, c.amount_invoice, normal_format)
-            worksheet.write(x, 8, c.amount_rest, normal_format)
-            worksheet.write(x, 9, c.percentage_execution, normal_format)
+            worksheet.write(x, 6, '{0:.2f}'.format(c.amount_total).replace('.', ','), normal_format)
+            worksheet.write(x, 7, '{0:.2f}'.format(c.amount_invoice).replace('.', ','), normal_format)
+            worksheet.write(x, 8, '{0:.2f}'.format(c.amount_rest).replace('.', ','), normal_format)
+            worksheet.write(x, 9, '{0:.2f}'.format(c.percentage_execution).replace('.', ','), normal_format)
             x += 1
 
 ContractSingleXlsPercentReport('report.l10n_cu_hlg_contract.contract_single_xls_percent_report.xlsx', 'l10n_cu_contract.to_expire_percent')
