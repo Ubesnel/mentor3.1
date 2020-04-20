@@ -43,7 +43,7 @@
             <field name="view_type">form</field>
             <field name="view_mode">sale_contract_dashboard_view</field>
             <field name="context">{
-            'sale_contract_dashboard_view_view_ref' : 'l10n_cu_hlg_contract_sale_dashboard.sale_contract_dashboard_view'
+            'sale_contract_dashboard_view_view_ref' : 'l10n_cu_hlg_contract_dashboard.sale_contract_dashboard_view'
             }</field>
         </record>
         <record model="ir.ui.view" id="sale_contract_dashboard_view">
@@ -63,30 +63,30 @@
 
         <template id="assets_backend" name="Contract assets" inherit_id="web.assets_backend">
             <xpath expr="." position="inside">
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/src/js/hr_dashboard.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/src/js/hr_dashboard_purchase.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/charts/Chart.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/charts/Chart.bundle.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/src/js/hr_dashboard.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/src/js/hr_dashboard_purchase.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/charts/Chart.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/charts/Chart.bundle.min.js"/>
                 <!-- Datatable scripts -->
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/datatables.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/dataTables.buttons.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/buttons.flash.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/buttons.html5.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/buttons.print.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/pdfmake.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/vfs_fonts.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/jszip.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/buttons.bootstrap.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/buttons.bootstrap4.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/buttons.colVis.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/datatables.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/dataTables.buttons.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/buttons.flash.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/buttons.html5.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/buttons.print.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/pdfmake.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/vfs_fonts.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/jszip.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/buttons.bootstrap.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/buttons.bootstrap4.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/buttons.colVis.min.js"/>
                 <!-- Scripts to export html to pdf -->
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/jsPdf/jspdf.min.js"/>
-                <script type="text/javascript" src="/l10n_cu_hlg_contract_sale_dashboard/static/lib/jsPdf/jspdf.debug.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/jsPdf/jspdf.min.js"/>
+                <script type="text/javascript" src="/l10n_cu_hlg_contract_dashboard/static/lib/jsPdf/jspdf.debug.js"/>
                 <!-- Css scripts for dashboard view and table -->
-                <link rel="stylesheet" href="/l10n_cu_hlg_contract_sale_dashboard/static/src/css/dashboard.css"/>
-                <link rel="stylesheet" href="/l10n_cu_hlg_contract_sale_dashboard/static/src/css/dashboard_purchase.css"/>
-                <link rel="stylesheet" href="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/datatables.min.css"/>
-                <link rel="stylesheet" href="/l10n_cu_hlg_contract_sale_dashboard/static/lib/dataTables/buttons.dataTables.min.css"/>
+                <link rel="stylesheet" href="/l10n_cu_hlg_contract_dashboard/static/src/css/dashboard.css"/>
+                <link rel="stylesheet" href="/l10n_cu_hlg_contract_dashboard/static/src/css/dashboard_purchase.css"/>
+                <link rel="stylesheet" href="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/datatables.min.css"/>
+                <link rel="stylesheet" href="/l10n_cu_hlg_contract_dashboard/static/lib/dataTables/buttons.dataTables.min.css"/>
             </xpath>
         </template>
     </data>

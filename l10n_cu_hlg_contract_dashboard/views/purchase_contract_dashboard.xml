@@ -43,7 +43,7 @@
             <field name="view_type">form</field>
             <field name="view_mode">purchase_contract_dashboard_view</field>
             <field name="context">{
-            'purchase_contract_dashboard_view_view_ref' : 'l10n_cu_hlg_contract_sale_dashboard.purchase_contract_dashboard_view'
+            'purchase_contract_dashboard_view_view_ref' : 'l10n_cu_hlg_contract_dashboard.purchase_contract_dashboard_view'
             }</field>
         </record>
         <record model="ir.ui.view" id="purchase_contract_dashboard_view">

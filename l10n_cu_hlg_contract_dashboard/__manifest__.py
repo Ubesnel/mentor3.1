@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Tablero Mentor v3.1",
+    'name': "Tablero (Mentor v3.1)",
 
     'author': "Desoft Holguin",
     'version': "10.0.1.1.0",

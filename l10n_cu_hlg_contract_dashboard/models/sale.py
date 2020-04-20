@@ -214,7 +214,7 @@ class ContractSaleDashboard(models.Model):
                 'percentage_execution'] else '0,00'
             contract_table_1.append(dicc_c)
 
-        view_invoice_id = self.env.ref('l10n_cu_hlg_contract_sale_dashboard.invoice_tree_dashboard_sale').id
+        view_invoice_id = self.env.ref('l10n_cu_hlg_contract_dashboard.invoice_tree_dashboard_sale').id
         data = {
             'contract_count': self.env['l10n_cu_contract.contract'].sudo().search_count([('flow', '=', 'customer')]),
             'contract_count_draft': self.env['l10n_cu_contract.contract'].sudo().search_count(
