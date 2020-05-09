@@ -34,6 +34,7 @@
         'wizard/l10n_cu_contract_create_sale_order_view.xml',
         'wizard/l10n_cu_contract_to_expire_view.xml',
         'wizard/l10n_cu_contract_to_expire_percent_view.xml',
+        'wizard/l10n_cu_contract_update_partner_employee_view.xml',
 
 
         'data/contract_email_template_data.xml',

@@ -25,6 +25,7 @@ from . import l10n_cu_contract_registry_information
 from . import l10n_cu_contract_create_sale_order
 from . import l10n_cu_contract_to_expire
 from . import l10n_cu_contract_to_expire_percent
+from . import l10n_cu_contract_update_partner_employee
 
 
 
