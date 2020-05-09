@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="contract_update_partner_employee_wzd_view_form" model="ir.ui.view">
+            <field name="name">l10n_cu_contract.contract_update_partner_employee</field>
+            <field name="model">l10n_cu_contract.update_partner_employee</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Update Employees">
+                    <separator string="Update Employees"/>
+                    <label string="This wizard allow to update the employee information."/>
+                    <p>The system will update the employees information for a correct use of them.
+                        <br/>
+                        Click in <b>Update</b> to begin the process.
+                    </p>
+
+                    <footer>
+                        <div>
+                            <button name="update_partner_employee" string="Update" type="object"
+                                    class="oe_highlight"/>
+                            o
+                            <button special="cancel" string="Close" class="oe_link"/>
+                        </div>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="action_contract_update_partner_employee" model="ir.actions.act_window">
+            <field name="name">Update Employees</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">l10n_cu_contract.update_partner_employee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="contract_update_partner_employee_menu" action="action_contract_update_partner_employee"
+                  name="Update Employees" parent="menu_contract_configuration" sequence="100"/>
+
+
+    </data>
+</openerp>
