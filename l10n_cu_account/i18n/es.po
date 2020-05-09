@@ -1,0 +1,290 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_cu_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-10 20:46+0000\n"
+"PO-Revision-Date: 2017-07-10 20:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "<strong>Company:</strong>"
+msgstr "<strong>Compañía:</strong>"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "<strong>Month:</strong>"
+msgstr "<strong>Mes:</strong>"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "<strong>Year:</strong>"
+msgstr "<strong>Año:</strong>"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_amount
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Amount"
+msgstr "Importe"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_residual
+msgid "Amount Due"
+msgstr "Importe adeudado"
+
+#. module: l10n_cu_account
+#: code:addons/l10n_cu_account/models/account_payment.py:63
+#, python-format
+msgid "Check the amount"
+msgstr "Chequea los importes"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Codigo"
+msgstr "Código"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Con"
+msgstr "Con"
+
+#. module: l10n_cu_account
+#: code:addons/l10n_cu_account/models/account_payment.py:132
+#, python-format
+msgid "Counterpart"
+msgstr "Counterpart"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Date"
+msgstr "Fecha"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_display_name
+#: model:ir.model.fields,field_description:l10n_cu_account.field_report_l10n_cu_account_report_payment_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Elaborado por:"
+msgstr "Elaborado por:"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Firma"
+msgstr "Firma"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_account_invoice_folio
+msgid "Folio"
+msgstr "Folio"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_id
+#: model:ir.model.fields,field_description:l10n_cu_account.field_report_l10n_cu_account_report_payment_id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_cu_account
+#: model:ir.model,name:l10n_cu_account.model_account_invoice
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_invoice_id
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_cu_account
+#: code:addons/l10n_cu_account/models/account_invoice.py:88
+#, python-format
+msgid "Invoice must be validated in order to set it to register payment."
+msgstr "La factura debe ser validada para registrar el pago."
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+#: model:ir.ui.view,arch_db:l10n_cu_account.view_account_payment_form_inherit
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines___last_update
+#: model:ir.model.fields,field_description:l10n_cu_account.field_report_l10n_cu_account_report_payment___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_cu_account
+#: code:addons/l10n_cu_account/models/account_invoice.py:35
+#, python-format
+msgid "Less Payment"
+msgstr "Menos pagos"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_account_payment_line_ids
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_account_invoice_name_related
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_name_related
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Number"
+msgstr "Número"
+
+#. module: l10n_cu_account
+#: code:addons/l10n_cu_account/models/account_payment.py:168
+#, python-format
+msgid "Only a draft payment can be posted. Trying to post a payment in state %s."
+msgstr "Only a draft payment can be posted. Trying to post a payment in state %s."
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_cu_account
+#: model:ir.actions.report.xml,name:l10n_cu_account.action_report_payment
+#: model:ir.model.fields,field_description:l10n_cu_account.field_l10n_cu_account_payment_group_lines_account_payment_id
+msgid "Payment"
+msgstr "Pagos"
+
+#. module: l10n_cu_account
+#: model:ir.model,name:l10n_cu_account.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_account_invoice_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_account_invoice_quantity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "REGISTRO DE ENTREGA DE CHEQUES"
+msgstr "REGISTRO DE ENTREGA DE CHEQUES"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Recibe"
+msgstr "Recibe"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,help:l10n_cu_account.field_l10n_cu_account_payment_group_lines_residual
+msgid "Remaining amount due."
+msgstr "Importe restante."
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_account_payment_residual_amount
+msgid "Residual Amount"
+msgstr "Importe residual"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_account_invoice_signed_date
+msgid "Signed Date"
+msgstr "Fecha de firma"
+
+#. module: l10n_cu_account
+#: code:addons/l10n_cu_account/models/account_invoice.py:23
+#, python-format
+msgid "Signed date is not defined"
+msgstr "Fecha de firma no se encuentra definida"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,help:l10n_cu_account.field_account_invoice_name_related
+#: model:ir.model.fields,help:l10n_cu_account.field_l10n_cu_account_payment_group_lines_name_related
+msgid "The name that will be used on account move lines"
+msgstr "El nombre que se utilizará en los apuntes contables"
+
+#. module: l10n_cu_account
+#: code:addons/l10n_cu_account/models/account_payment.py:171
+#, python-format
+msgid "The payment cannot be processed because the invoice is not open!"
+msgstr "El pago no se puede procesar porque la factura no está abierta!"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_cu_account
+#: model:ir.model.fields,field_description:l10n_cu_account.field_account_payment_transfer_number
+msgid "Transfer Number"
+msgstr "Número"
+
+#. module: l10n_cu_account
+#: sql_constraint:account.payment:0
+msgid "Transfer number must be unique!"
+msgstr "El número de transferencia debe ser único!"
+
+#. module: l10n_cu_account
+#: code:addons/l10n_cu_account/models/account_invoice.py:91
+#, python-format
+msgid "You cannot pay an invoice which is partially paid. You need to reconcile payment entries first."
+msgstr "No puede pagar una factura que se paga parcialmente. Primero debe reconciliar las entradas de pago."
+
+#. module: l10n_cu_account
+#: model:ir.model,name:l10n_cu_account.model_account_payment_group
+msgid "account.payment_group"
+msgstr "account.payment_group"
+
+#. module: l10n_cu_account
+#: model:ir.model,name:l10n_cu_account.model_l10n_cu_account_payment_group_lines
+msgid "l10n_cu_account_payment.group_lines"
+msgstr "l10n_cu_account_payment.group_lines"
+
+#. module: l10n_cu_account
+#: model:ir.ui.view,arch_db:l10n_cu_account.report_payment
+msgid "pesos en pagos anticipados"
+msgstr "pesos en pagos anticipados"
+
+#. module: l10n_cu_account
+#: model:ir.model,name:l10n_cu_account.model_report_account_payment
+msgid "report.account.payment"
+msgstr "report.account.payment"
+
+#. module: l10n_cu_account
+#: model:ir.model,name:l10n_cu_account.model_report_l10n_cu_account_report_payment
+msgid "report.l10n_cu_account.report_payment"
+msgstr "report.l10n_cu_account.report_payment"
+
