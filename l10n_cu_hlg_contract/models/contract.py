@@ -732,7 +732,8 @@ class Contract ( models.Model ):
                          'bank_phone_cuc': cta_ban_cuc.bank_id.phone, 'bank_street_cuc': cta_ban_cuc.bank_id.street,
                          'bank_email_cuc': cta_ban_cuc.bank_id.email, 'ministry': contract.partner_id.ministry_id.name,
                          'list_product': list_product, 'usd_license_number': contract.partner_id.usd_license_number,
-                         'amount_total': contract.amount_total,}
+                         'amount_total': contract.amount_total,'mercantil_register':contract.partner_id.mercantil_register,
+                         'code_swift':contract.partner_id.code_swift}
                 res = {'type': 'ir.actions.report.xml',
                        'report_name': contract.contract_type.ir_actions_report_xml_id.report_name, 'datas': datas,}
                 return res
@@ -794,9 +795,9 @@ class Contract ( models.Model ):
         template = self.env.ref ( 'l10n_cu_hlg_contract.mail_template_data_notification_email_contract_monetary' )
         contract_monetary = []
         contracts = self.env['l10n_cu_contract.contract'].search (
-            [('flow', '=', 'customer'), ('state', 'in', ['open'])], order='percentage_execution asc' )
+            [('state', 'in', ['open'])], order='percentage_execution asc' )
         for contract in contracts:
-            if contract.percentage_execution >= percentage:
+            if contract.percentage_execution >= float(percentage):
                 contract_monetary.append ( (contract.number, contract.partner_id.name, contract.name,
                                             contract.date_start, contract.date_end, contract.amount_total,
                                             contract.amount_invoice, contract.percentage_execution) )
